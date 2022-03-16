@@ -47,14 +47,17 @@ int main()
 
     // M= coluna
     // N= linha
+  
 
     
     for(int i=1; i<=N; i++){
 
         cin>> a[i];
+       
     }for(int i=1; i<=M; i++){
 
         cin>> b[i];
+        
     }
 
     for (int linha=1; linha <= N; linha++){
@@ -95,28 +98,41 @@ int main()
          
     }
 
-    int maxlinha = std::max_element(H.begin(),H.end()) - H.begin();
-    int maxcoluna= std::max_element(H[maxlinha].begin(),H[maxlinha].end()) - H[maxlinha].begin();
+    int maxScore=0;
+    int maxlinha = 0;
+    int maxcoluna= 0;
    
-    // max_score=H[maxlinha][maxcoluna]; 
+    for (int i = 0; i <= N; i++) {
+        for (int j = 0; j <= M; j++) {
+            if (H[i][j] > maxScore) {
+                maxScore = H[i][j];
+                maxlinha=i;
+                maxcoluna=j;
+            }
+        }
+    }
+
+    
 
 
     int i=maxlinha;
     int j=maxcoluna;
     int ordem=0;
+
+    cout<<"i"<<i<< endl<<'j'<<j<< endl;
     while(i!=0 && j!=0 && H[i][j]!=0){
 
         if(salto[i][j].salto=="insercao"){
 
             seq_b[ordem]=b[j];
-            seq_a[ordem]='_';
+            seq_a[ordem]='-';
             j--;
 
 
         }else  if(salto[i][j].salto=="delecao"){
 
             seq_a[ordem]=a[i];
-            seq_b[ordem]='_';
+            seq_b[ordem]='-';
             i--;
 
         }else  if(salto[i][j].salto=="diagonal"){
@@ -136,27 +152,34 @@ int main()
 
 
 
-
+   
     
-    // for (int linha=0; linha <= N; linha++){
+    for (int linha=0; linha <= N; linha++){
         
-    //     for(int coluna=0; coluna<=M; coluna++){
+        for(int coluna=0; coluna<=M; coluna++){
 
             
-    //         cout<< H[linha][coluna] << " ";
-    //     };
-    //     cout<<endl;
+            cout<< H[linha][coluna] << " ";
+        };
+        cout<<endl;
         
-    // };
+    };
+   
+    // for(int i=0; i<=M; i++){
+       
+    //     cout<<seq_b[i];
+      
+    // }
 
-    std::reverse(seq_b.begin(), seq_b.end());
-    std::reverse(seq_a.begin(), seq_a.end());
-    for(int i=M; i>=0; i--){
+   
+    for( int i=M-1; i>=0; i--){
         cout<<seq_b[i];
     }
+
+  
    
     cout<<endl;
-    for(int i=N; i>=0; i--){
+    for(int i=N-1; i>=0; i--){
         cout<<seq_a[i];
     }
     cout<<endl;
