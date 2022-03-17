@@ -3,6 +3,8 @@
 #include <vector>
 #include <cmath>
 
+#include <string>
+
 using namespace std;
 
 
@@ -37,11 +39,13 @@ int main()
     salto.reserve(N*M);
     a.reserve(N+1);
     b.reserve(M+1);
-    seq_a.reserve(N+1);
+    seq_a.reserve(M+1);
     seq_b.reserve(M+1);
 
     a[0]='-';
     b[0]='-';
+
+   
     // max_score=0;
 
 
@@ -59,6 +63,13 @@ int main()
         cin>> b[i];
         
     }
+
+
+    // seq_a=a;
+    // seq_b=b;
+    
+   
+    
 
     for (int linha=1; linha <= N; linha++){
         
@@ -119,8 +130,9 @@ int main()
     int j=maxcoluna;
     int ordem=0;
 
-    cout<<"i"<<i<< endl<<'j'<<j<< endl;
-    while(i!=0 && j!=0 && H[i][j]!=0){
+    
+    while((i!=0 || j!=0) && H[i][j]!=0){
+
 
         if(salto[i][j].salto=="insercao"){
 
@@ -154,16 +166,16 @@ int main()
 
    
     
-    for (int linha=0; linha <= N; linha++){
+    // for (int linha=0; linha <= N; linha++){
         
-        for(int coluna=0; coluna<=M; coluna++){
+    //     for(int coluna=0; coluna<=M; coluna++){
 
             
-            cout<< H[linha][coluna] << " ";
-        };
-        cout<<endl;
+    //         cout<< H[linha][coluna] << " ";
+    //     };
+    //     cout<<endl;
         
-    };
+    // };
    
     // for(int i=0; i<=M; i++){
        
@@ -171,17 +183,17 @@ int main()
       
     // }
 
-   
-    for( int i=M-1; i>=0; i--){
+   for( int i=M; i>=0; i--){
         cout<<seq_b[i];
     }
 
   
    
     cout<<endl;
-    for(int i=N-1; i>=0; i--){
+    for(int i=M; i>=0; i--){
         cout<<seq_a[i];
     }
+  
     cout<<endl;
 
     
