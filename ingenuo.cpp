@@ -183,14 +183,14 @@ int main()
       
     // }
 
-   for( int i=M; i>=0; i--){
+   for( int i=ordem; i>=0; i--){
         cout<<seq_b[i];
     }
 
   
    
     cout<<endl;
-    for(int i=M; i>=0; i--){
+    for(int i=ordem; i>=0; i--){
         cout<<seq_a[i];
     }
   
