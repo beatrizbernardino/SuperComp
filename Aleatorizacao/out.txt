@@ -1,0 +1,700 @@
+MAXSCORE: 3
+
+SEQB: GTC
+SEQA: -GC
+
+------------
+
+MAXSCORE: 4
+
+SEQB: CGC
+SEQA: -GC
+
+------------
+
+MAXSCORE: 2
+
+SEQB: A-A
+SEQA: T-G
+
+------------
+
+MAXSCORE: 5
+
+SEQB: --ACGCG
+SEQA: AT-GC-G
+
+------------
+
+MAXSCORE: 6
+
+SEQB: CTATTAAC--
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: -ACGCGTCTC
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AAC-
+SEQA: C-GT
+
+------------
+
+MAXSCORE: 3
+
+SEQB: AC-
+SEQA: AT-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AC---
+SEQA: GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: -ACGCGTC
+SEQA: AT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: TATTAA
+SEQA: AT-GC-
+
+------------
+
+MAXSCORE: 8
+
+SEQB: CCATCAT
+SEQA: CCAT-GC
+
+------------
+
+MAXSCORE: 4
+
+SEQB: ACAC
+SEQA: CCAT
+
+------------
+
+MAXSCORE: 6
+
+SEQB: CCAT
+SEQA: CAT-
+
+------------
+
+MAXSCORE: 5
+
+SEQB: CACCTA
+SEQA: CCAT-G
+
+------------
+
+MAXSCORE: 7
+
+SEQB: ACACCTATTA
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 2
+
+SEQB: TTAA
+SEQA: CCAT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: CTATTAA
+SEQA: CAT-GC-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: -ACA
+SEQA: CAT-
+
+------------
+
+MAXSCORE: 5
+
+SEQB: C---ACGCG
+SEQA: CCAT-GC-G
+
+------------
+
+MAXSCORE: 4
+
+SEQB: --ACGC
+SEQA: AT-GC-
+
+------------
+
+MAXSCORE: 2
+
+SEQB: ---
+SEQA: -GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: -ACGCGTCT
+SEQA: CAT-GC-GT
+
+------------
+
+MAXSCORE: 6
+
+SEQB: CTCCATCA
+SEQA: CAT-GC-G
+
+------------
+
+MAXSCORE: 6
+
+SEQB: CATG
+SEQA: CAT-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: TAAC--
+SEQA: -GC-GT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: ACGCG
+SEQA: -GC-G
+
+------------
+
+MAXSCORE: 3
+
+SEQB: TCT
+SEQA: CAT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AC--
+SEQA: C-GT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: ACGCGT
+SEQA: T-GC-G
+
+------------
+
+MAXSCORE: 3
+
+SEQB: TTA-A
+SEQA: CAT-G
+
+------------
+
+MAXSCORE: 4
+
+SEQB: TAAC---AC
+SEQA: CAT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: TATT
+SEQA: CAT-
+
+------------
+
+MAXSCORE: 3
+
+SEQB: CTA
+SEQA: CCA
+
+------------
+
+MAXSCORE: 5
+
+SEQB: CACCT
+SEQA: CCAT-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AC---AC
+SEQA: AT-GC-G
+
+------------
+
+MAXSCORE: 5
+
+SEQB: ---AC-
+SEQA: T-GC-G
+
+------------
+
+MAXSCORE: 7
+
+SEQB: ACGCGTCT
+SEQA: AT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AAC---A
+SEQA: AT-GC-G
+
+------------
+
+MAXSCORE: 6
+
+SEQB: CTATTAAC-
+SEQA: CAT-GC-GT
+
+------------
+
+MAXSCORE: 8
+
+SEQB: CTCCATCATG
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: CACCTATTA
+SEQA: CAT-GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: GCGTCT
+SEQA: -GC-GT
+
+------------
+
+MAXSCORE: 2
+
+SEQB: ATC
+SEQA: C-G
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AC-
+SEQA: GC-
+
+------------
+
+MAXSCORE: 5
+
+SEQB: TATTAAC-
+SEQA: AT-GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: CCTATTA
+SEQA: CCAT-GC
+
+------------
+
+MAXSCORE: 5
+
+SEQB: CACCTAT
+SEQA: CAT-GC-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: C--
+SEQA: C-G
+
+------------
+
+MAXSCORE: 3
+
+SEQB: CCT
+SEQA: CAT
+
+------------
+
+MAXSCORE: 3
+
+SEQB: TCTCC
+SEQA: CAT-G
+
+------------
+
+MAXSCORE: 4
+
+SEQB: ACACC
+SEQA: CAT-G
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AC-
+SEQA: C-G
+
+------------
+
+MAXSCORE: 3
+
+SEQB: CGTCT
+SEQA: AT-GC
+
+------------
+
+MAXSCORE: 2
+
+SEQB: CTA
+SEQA: -GC
+
+------------
+
+MAXSCORE: 4
+
+SEQB: ACGC
+SEQA: GC-G
+
+------------
+
+MAXSCORE: 6
+
+SEQB: TCCATCAT
+SEQA: CAT-GC-G
+
+------------
+
+MAXSCORE: 3
+
+SEQB: CGT
+SEQA: C-G
+
+------------
+
+MAXSCORE: 5
+
+SEQB: ATTAAC---A
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: A-ACACCTAT
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AC-
+SEQA: GC-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: TTAAC---AC
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 2
+
+SEQB: CCTAT
+SEQA: -GC-G
+
+------------
+
+MAXSCORE: 5
+
+SEQB: CTATTAAC
+SEQA: CCAT-GC-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: C---A
+SEQA: GC-GT
+
+------------
+
+MAXSCORE: 2
+
+SEQB: TTA
+SEQA: AT-
+
+------------
+
+MAXSCORE: 5
+
+SEQB: TA-ACACCT
+SEQA: CCAT-GC-G
+
+------------
+
+MAXSCORE: 4
+
+SEQB: CGCG
+SEQA: -GC-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AAC--
+SEQA: GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: CGCGTCT
+SEQA: T-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: AC---
+SEQA: GC-GT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: TATTAAC--
+SEQA: CCAT-GC-G
+
+------------
+
+MAXSCORE: 4
+
+SEQB: CTCC
+SEQA: CCAT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: -ACGCGTC
+SEQA: AT-GC-GT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: CACCTA
+SEQA: CCAT-G
+
+------------
+
+MAXSCORE: 5
+
+SEQB: C---AC---A
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: ATCATG
+SEQA: CAT-GC
+
+------------
+
+MAXSCORE: 5
+
+SEQB: -ACACCTA
+SEQA: CCAT-GC-
+
+------------
+
+MAXSCORE: 4
+
+SEQB: TA-ACAC
+SEQA: CCAT-GC
+
+------------
+
+MAXSCORE: 6
+
+SEQB: TCCATCA
+SEQA: CAT-GC-
+
+------------
+
+MAXSCORE: 5
+
+SEQB: -AC---
+SEQA: T-GC-G
+
+------------
+
+MAXSCORE: 8
+
+SEQB: TCCATCA
+SEQA: CCAT-GC
+
+------------
+
+MAXSCORE: 8
+
+SEQB: GCGTCTCCAT
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: C---AC
+SEQA: T-GC-G
+
+------------
+
+MAXSCORE: 2
+
+SEQB: C---A
+SEQA: AT-GC
+
+------------
+
+MAXSCORE: 6
+
+SEQB: CCA
+SEQA: CCA
+
+------------
+
+MAXSCORE: 4
+
+SEQB: --ACGC
+SEQA: CAT-GC
+
+------------
+
+MAXSCORE: 7
+
+SEQB: CACCTATTAA
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: -AC---
+SEQA: -GC-GT
+
+------------
+
+MAXSCORE: 7
+
+SEQB: --ACGCGTCT
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: C--
+SEQA: GC-
+
+------------
+
+MAXSCORE: 7
+
+SEQB: ACGCGTCTC
+SEQA: CAT-GC-GT
+
+------------
+
+MAXSCORE: 2
+
+SEQB: -AC
+SEQA: GC-
+
+------------
+
+MAXSCORE: 7
+
+SEQB: ---ACGCGTC
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 5
+
+SEQB: --AC--
+SEQA: T-GC-G
+
+------------
+
+MAXSCORE: 8
+
+SEQB: CCTATTAAC-
+SEQA: CCAT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: C---A
+SEQA: T-GC-
+
+------------
+
+MAXSCORE: 7
+
+SEQB: -ACGCGTC
+SEQA: AT-GC-GT
+
+------------
+
+MAXSCORE: 4
+
+SEQB: TTAAC---A
+SEQA: CCAT-GC-G
+
+------------
+
+MAXSCORE: 5
+
+SEQB: ATTAAC--
+SEQA: CCAT-GC-
+
+------------
+
