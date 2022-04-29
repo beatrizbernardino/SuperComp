@@ -8,15 +8,6 @@
 using namespace std;
 
 
-int w(char a, char b){
-    if (a==b){
-        return 2;
-    }else {
-        return -1;
-    }
-
-
-}
 
 
 int main()
@@ -79,7 +70,7 @@ int main()
         vector<char> sb;
         vector<char> best_a;
 
-        sb.reserve(k+1);
+        sb.reserve(N);
         sb[0]='-';
         best_a.reserve(k); 
 
@@ -99,7 +90,7 @@ int main()
         for( int l=0; l<p; l++){
 
             vector<char> sa;
-            sa.reserve(k+1);
+            sa.reserve(N);
             sa[0]='-';
 
             vector<vector<int>> H(k+1, vector<int>(k+1,0));
@@ -125,7 +116,7 @@ int main()
                     int diagonal;
                     int delecao;
                     int insercao;
-                    score=w(sa[linha],sb[coluna]);
+                    score= sa[linha]==sb[coluna]? 2:-1;
                     diagonal= H[linha-1][coluna-1]+ score;
                     delecao=H[linha-1][coluna]-1;
                     insercao=H[linha][coluna-1]-1;
@@ -161,12 +152,7 @@ int main()
                 }
            
             }
-
-           
-            // i++;
           
-
-
         }
 
 

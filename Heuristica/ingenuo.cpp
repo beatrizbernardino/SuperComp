@@ -8,19 +8,11 @@
 using namespace std;
 
 
-int w(char a, char b){
-    if (a==b){
-        return 2;
-    }else {
-        return -1;
-    }
 
-
-}
 
 struct tipo_salto{
 
-    string salto;
+    int salto;
 };
 
 int main()
@@ -79,7 +71,7 @@ int main()
             int diagonal;
             int delecao;
             int insercao;
-            score=w(a[linha],b[coluna]);
+            score=(a[linha]==b[coluna]?2:-1);
             diagonal= H[linha-1][coluna-1]+ score;
             delecao=H[linha-1][coluna]-1;
             insercao=H[linha][coluna-1]-1;
@@ -90,17 +82,17 @@ int main()
                 
                 
 
-                salto[linha][coluna].salto="diagonal";
+                salto[linha][coluna].salto=0;
 
             }
             else if(H[linha][coluna]==delecao){
                 
-                salto[linha][coluna].salto= "delecao";
+                salto[linha][coluna].salto=1;
 
             }
             else if(H[linha][coluna]==insercao){
                 
-                salto[linha][coluna].salto= "insercao";
+                salto[linha][coluna].salto= 2;
 
             }
         }
@@ -134,20 +126,20 @@ int main()
     while((i!=0 || j!=0) && H[i][j]!=0){
 
 
-        if(salto[i][j].salto=="insercao"){
+        if(salto[i][j].salto==2){
 
             seq_b[ordem]=b[j];
             seq_a[ordem]='-';
             j--;
 
 
-        }else  if(salto[i][j].salto=="delecao"){
+        }else  if(salto[i][j].salto==1){
 
             seq_a[ordem]=a[i];
             seq_b[ordem]='-';
             i--;
 
-        }else  if(salto[i][j].salto=="diagonal"){
+        }else  if(salto[i][j].salto==0){
 
             seq_a[ordem]=a[i];
             seq_b[ordem]=b[j];
@@ -182,6 +174,9 @@ int main()
     //     cout<<seq_b[i];
       
     // }
+
+
+    cout<<"MAXSCORE: "<<maxScore<<endl;
 
    for( int i=ordem-1; i>=0; i--){
         cout<<seq_b[i];
