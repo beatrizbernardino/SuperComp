@@ -46,7 +46,7 @@ struct meu_functor
     }
 };
 
-
+// calculando a lateral esquerda da matriz
 struct esquerda
 {
     __host__ __device__
@@ -116,13 +116,14 @@ int main()
     }
 
     int subb_size= subseq_b.size();
+
+
     thrust::device_vector<int> calc[2];
-
     thrust::counting_iterator<int> c0(1);
-
-  
     thrust::device_vector<int> max_scores;
 
+
+    // gerando cada combinação de pares
     #pragma omp  for collapse(2)
     for(int i=0; i<subb_size; i++){
         for(int j=0; j<suba_size; j++){
@@ -130,9 +131,14 @@ int main()
 
             thrust::device_vector<char> sa(subseq_a[j].begin(), subseq_a[j].end());
             thrust::device_vector<char> sb(subseq_b[i].begin(), subseq_b[i].end());
+
+
+            // linhas da matriz
             calc[0].resize(int(sa.size())+1);
             calc[1].resize(int(sa.size())+1); 
             thrust::fill(calc[0].begin(), calc[0].end(),0);
+
+            //  cada letra de b precisa ser comparada com todas as letras de a
             thrust::counting_iterator<int> c1(int(sa.size()+1));
            
             for(int n=0; n<int(sb.size()); n++ ){
@@ -147,7 +153,7 @@ int main()
         }    
     }
 
-    // thrust::device_vector<int>::iterator best_score= thrust::max_element(max_scores.begin(), max_scores.end() );
+      // thrust::device_vector<int>::iterator best_score= thrust::max_element(max_scores.begin(), max_scores.end() );
     int  best_score= thrust::reduce(max_scores.begin(), max_scores.end(), 0, thrust::maximum<int>());
     
     cout<<best_score<<endl;
